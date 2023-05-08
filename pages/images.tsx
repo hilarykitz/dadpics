@@ -11,7 +11,7 @@ const Images = () => {
     <section className="flex flex-col justify-between min-h-screen p24">
       {data &&
         data.map((path: string) => (
-          <div className="imageWrapper">
+          <div className="imageWrapper" key={path}>
             <img src={path} alt="" />
           </div>
         ))}
