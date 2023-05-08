@@ -8,6 +8,12 @@
   --background-end-rgb: #E9E0F5;
   
 }
+
+.flex-col, .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* 
 @media (prefers-color-scheme: dark) {
   :root {
