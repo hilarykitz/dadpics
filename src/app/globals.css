@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: #cae4af;
+  --background-end-rgb: #E9E0F5;
+  
+}
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  opacity: 0;
+  animation: fadeIn 240ms forwards;
+  height: auto!important;
+}
+
+
+body {
+  color: #4D4819;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1vw;
+  text-align: center;
+  flex-grow: initial;
+  flex-wrap: wrap;
+  position: relative;
+  width: 800px;
+  max-width: 80vw;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: Futura, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
