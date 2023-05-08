@@ -3,7 +3,7 @@ import useSWR from "swr";
 
 import { handler } from "./api/handler";
 
-export const Images = () => {
+const Images = () => {
   const { data } = useSWR("/api/getFiles", handler);
 
   return (
@@ -16,3 +16,5 @@ export const Images = () => {
     </section>
   );
 };
+
+export default Images;
